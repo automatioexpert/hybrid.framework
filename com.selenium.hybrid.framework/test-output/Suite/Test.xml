@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite hostname="Mukesh" name="TestCases.LoginWordpress" tests="5" failures="2" timestamp="19 Dec 2015 04:05:14 GMT" time="77.535" errors="0">
+  <testcase name="test2" time="0.041" classname="TestCases.LoginWordpress"/>
+  <testcase name="test3" time="0.004" classname="TestCases.LoginWordpress"/>
+  <testcase name="verifyLoginWordpress" time="19.85" classname="TestCases.LoginWordpress"/>
+  <testcase name="verifyHomePage" time="29.374" classname="TestCases.LoginWordpress1">
+    <failure type="java.lang.AssertionError" message="expected:&amp;lt;true&amp;gt; but was:&amp;lt;false&amp;gt;">
+      <![CDATA[java.lang.AssertionError: expected:<true> but was:<false>
+	at Pages.DashBoard.verifyHomeTitle(DashBoard.java:19)
+	at TestCases.LoginWordpress1.verifyHomePage(LoginWordpress1.java:38)
+... Removed 29 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="VerifyPostPublish" time="22.205" classname="TestCases.PublishPost">
+    <failure type="java.lang.AssertionError" message="expected:&amp;lt;true&amp;gt; but was:&amp;lt;false&amp;gt;">
+      <![CDATA[java.lang.AssertionError: expected:<true> but was:<false>
+	at Pages.PostCreation.verifyPostPublish(PostCreation.java:54)
+	at TestCases.PublishPost.VerifyPostPublish(PublishPost.java:73)
+... Removed 29 stack frames]]>
+    </failure>
+  </testcase>
+</testsuite>

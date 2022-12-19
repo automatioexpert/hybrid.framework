@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="2" total="5" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="77535" started-at="2015-12-19T09:33:57Z" finished-at="2015-12-19T09:35:14Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="77535" started-at="2015-12-19T09:33:57Z" finished-at="2015-12-19T09:35:14Z">
+      <class name="TestCases.LoginWordpress">
+        <test-method status="PASS" signature="setUp()" name="setUp" is-config="true" duration-ms="1580" started-at="2015-12-19T09:33:57Z" finished-at="2015-12-19T09:33:58Z">
+        </test-method>
+        <test-method status="PASS" signature="test2()" name="test2" duration-ms="41" started-at="2015-12-19T09:33:58Z" finished-at="2015-12-19T09:33:58Z">
+        </test-method>
+        <test-method status="PASS" signature="test3()" name="test3" duration-ms="4" started-at="2015-12-19T09:33:58Z" finished-at="2015-12-19T09:33:58Z">
+        </test-method>
+        <test-method status="PASS" signature="verifyLoginWordpress()" name="verifyLoginWordpress" duration-ms="19850" started-at="2015-12-19T09:33:58Z" finished-at="2015-12-19T09:34:18Z">
+        </test-method>
+        <test-method status="PASS" signature="tearDown()" name="tearDown" is-config="true" duration-ms="1330" started-at="2015-12-19T09:34:18Z" finished-at="2015-12-19T09:34:19Z">
+        </test-method>
+      </class>
+      <class name="TestCases.PublishPost">
+        <test-method status="PASS" signature="setUp()" name="setUp" is-config="true" duration-ms="29" started-at="2015-12-19T09:34:49Z" finished-at="2015-12-19T09:34:49Z">
+        </test-method>
+        <test-method status="FAIL" signature="VerifyPostPublish()" name="VerifyPostPublish" duration-ms="22205" started-at="2015-12-19T09:34:49Z" finished-at="2015-12-19T09:35:11Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected:<true> but was:<false>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected:<true> but was:<false>
+	at org.testng.Assert.fail(Assert.java:89)
+	at org.testng.Assert.failNotEquals(Assert.java:489)
+	at org.testng.Assert.assertTrue(Assert.java:37)
+	at org.testng.Assert.assertTrue(Assert.java:47)
+	at Pages.PostCreation.verifyPostPublish(PostCreation.java:54)
+	at TestCases.PublishPost.VerifyPostPublish(PublishPost.java:73)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:673)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:842)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1166)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1178)
+	at org.testng.TestRunner.privateRun(TestRunner.java:757)
+	at org.testng.TestRunner.run(TestRunner.java:608)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1158)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1083)
+	at org.testng.TestNG.run(TestNG.java:999)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:203)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:174)
+]]>
+            </full-stacktrace>
+          </exception>
+        </test-method>
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)" name="tearDown" is-config="true" duration-ms="3051" started-at="2015-12-19T09:35:11Z" finished-at="2015-12-19T09:35:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult: VerifyPostPublish STATUS:FAILURE METHOD:TestCases.PublishPost.VerifyPostPublish()]
+]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+      </class>
+      <class name="TestCases.LoginWordpress1">
+        <test-method status="FAIL" signature="verifyHomePage()" name="verifyHomePage" duration-ms="29374" started-at="2015-12-19T09:34:19Z" finished-at="2015-12-19T09:34:49Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected:<true> but was:<false>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected:<true> but was:<false>
+	at org.testng.Assert.fail(Assert.java:89)
+	at org.testng.Assert.failNotEquals(Assert.java:489)
+	at org.testng.Assert.assertTrue(Assert.java:37)
+	at org.testng.Assert.assertTrue(Assert.java:47)
+	at Pages.DashBoard.verifyHomeTitle(DashBoard.java:19)
+	at TestCases.LoginWordpress1.verifyHomePage(LoginWordpress1.java:38)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:673)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:842)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1166)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1178)
+	at org.testng.TestRunner.privateRun(TestRunner.java:757)
+	at org.testng.TestRunner.run(TestRunner.java:608)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1158)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1083)
+	at org.testng.TestNG.run(TestNG.java:999)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:203)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:174)
+]]>
+            </full-stacktrace>
+          </exception>
+        </test-method>
+      </class>
+    </test>
+  </suite>
+</testng-results>
